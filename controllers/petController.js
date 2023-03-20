@@ -27,7 +27,7 @@ const pet_create = async (req, res) => {
         owner: req.body.owner,
         age: req.body.age,
         gender: req.body.gender,
-        desc:req.body.desc
+        type:req.body.type
       });
     
       try {
@@ -46,7 +46,7 @@ const pet_update = async (req, res) => {
           owner: req.body.owner,
           age: req.body.age,
           gender: req.body.gender,
-          desc:req.body.desc
+          type:req.body.type
         };
     
         const updatedPet = await Pet.findByIdAndUpdate(

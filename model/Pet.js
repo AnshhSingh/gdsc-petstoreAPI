@@ -5,7 +5,7 @@ const petSchema = mongoose.Schema({
   owner: String,
   age: String,
   gender: String,
-  desc:String
+  type:String
 });
 
 module.exports = mongoose.model("Pet", petSchema);
